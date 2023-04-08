@@ -16,14 +16,15 @@ import os  # handy system and path functions
 import sys  # to get file system encoding
 import numpy as np
 
-sub_num = '999' # must be a positive number
+sub_num = '9999' # must be a positive number
 curSubj = f'sub-{sub_num}'
 experiment_type = 'simultaneous'
 demo = False
 fullscreen = True
 
-parent = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
-root_path = parent+'/stimuli/'
+parent_dir = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
+current_dir = os.path.abspath(os.getcwd())
+root_path = current_dir + '/stimuli/'
 face_path = root_path + 'face_triangles/'
 obj_path = root_path + 'objects_seq_v_sim/object'
 
